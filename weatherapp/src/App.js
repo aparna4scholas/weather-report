@@ -2,6 +2,20 @@ import React from 'react';
 import './App.css';
 import axios from 'axios';
 import Weather from './components/Weather';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import Monday from './components/Monday';
+import Tuesday from './components/Tuesday';
+import Wednesday from './components/Wednesday';
+import Thursday from './components/Thursday';
+import Friday from './components/Friday';
+import Saturday from './components/Saturday';
+import Sunday from './components/Sunday';
+
 const apikey = process.env.REACT_APP_API_KEY;
 console.log(apikey);
 class App extends React.Component {
